@@ -1,6 +1,6 @@
 function stars() {
   const count = 200;
-  const section = document.querySelector("section");
+  const section = document.querySelector(".parallax");
   var i = 0;
 
   while (i < count) {
@@ -23,3 +23,21 @@ function stars() {
 }
 stars();
 
+let text = document.getElementById("main-header");
+let leaf = document.getElementById("leaf");
+let moon = document.getElementById("moon");
+let hill1 = document.getElementById("hill1");
+let hill4 = document.getElementById("hill4");
+let hill5 = document.getElementById("hill5");
+
+window.addEventListener("scroll", () => {
+  let value = window.scrollY;
+
+  text.style.marginRight = value * .5 + "px";
+  leaf.style.top = value * -1.5 + "px";
+  leaf.style.left = value * 1.5 + "px";
+  hill5.style.left = value * 1.5 + "px";
+  hill4.style.left = value * -1.5 + "px";
+  hill1.style.top = value * 0.5 + "px";
+  moon.style.top = value * .1 + "px";
+});
