@@ -20,7 +20,7 @@ Initial Sketch:
 Final Product:
 ![image](https://user-images.githubusercontent.com/119143763/210486996-3d24b3ce-87e0-4e40-8d02-811303182201.png)
 
-If you would like to see the redesign please go here: https://tanvirkhon.github.io/password-randomizer-app/
+If you would like to see the redesign please go here: https://tanvirkhon.github.io/roots-website-concept/
 
 
 ## Installation
