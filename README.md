@@ -1,4 +1,4 @@
-# Password Randomizer Application
+# Roots Landing Page Redesign
 
 ## Description
 
