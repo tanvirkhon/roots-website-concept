@@ -1,17 +1,9 @@
-@font-face {
-    font-family: "African-l6d";
-    src: url(/assets/fonts/African-l6d.ttf);
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-}
-
-::selection {
-    background: rgba(0, 0, 0, .2);
+    scroll-behavior: smooth;
 }
 
 body {
@@ -21,6 +13,7 @@ body {
 }
 
 /* Header Section */
+
 header {
     position: absolute;
     top: 0;
@@ -34,12 +27,14 @@ header {
 }
 
 .logo {
-    font-size: 2em;
+    font-size: 3em;
     font-family: fantasy;
-    color: #359381;
+    color: #fff;
     pointer-events: none;
     margin-right: 270px;
 }
+
+/* Navigation */
 
 .navigation a {
     text-decoration: none;
@@ -62,17 +57,18 @@ header {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow: hidden;
 }
 
 #main-header {
     position: absolute;
     font-size: 6em;
     color: #e58f0e;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, .2);
     font-family: fantasy;
     text-transform: uppercase;
 }
+
+/* Parallax Section*/
 
 .parallax img {
     position: absolute;
@@ -95,13 +91,14 @@ header {
     margin-bottom: 10px;
 }
 
-.sec p {
+.main-content p {
     font-size: 1em;
     color: #fff;
     font-weight: 300;
 }
 
 /* Section About us */
+
 .wrapper img{
     max-width: 350px auto;
     float: left;
@@ -114,9 +111,10 @@ header {
 .wrapper{
     margin: 50px auto;
     padding: 20px;
+    border: 5px solid #e58f0e;
     border-radius: 20px;
     width: 80%;
-    background-color: #594e2e;
+    background-color:#359381;
     box-shadow: 20px 10px 10px rgba(0, 0, 0, .2);
     overflow: hidden;
 }
@@ -127,42 +125,16 @@ header {
 }
 
 .text-box{
-    font-size: 16px;
+    font-size: 24px;
 }
 
-#section-2{
-    background-color: #359381;
+.section-2{
+    background-color: #594e2e;
 }
 
-#section-2 img{
+.section-2 img{
     float: right;
-}
-
-/* JavaScript created section for stars */
-section i {
-    position:absolute;
-    background: #fff;
-    border-radius: 50%;
-    box-shadow: 0 0 10px #fff,
-    0 0 20px #fff,
-    0 0 40px #fff,
-    0 0 80px #fff;
-    animation: animate linear infinite;
-}
-
-@keyframes animate {
-    0%{
-        opacity: 0;
-    }
-    10%{
-        opacity: 1;
-    }
-    90%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-    }
+    padding: 10px;
 }
 
 /* Form */
@@ -171,6 +143,7 @@ section i {
     margin: 50px auto;
     padding: 20px;
     border-radius: 20px;
+    border: 5px solid #e58f0e;
     width: 50%;
     background-color: #594e2e;
     box-shadow: 20px 10px 10px rgba(0, 0, 0, .2);
@@ -198,19 +171,16 @@ form{
 label, input, textarea{
 	display: block;	
 }
+
 input, textarea{
 	width: 500px;	
 	border: none;
 	border-radius: 20px;
 	outline: none;
 	padding: 10px;
-	font-family: 'Sniglet', cursive;
 	font-size: 1em;
 	color: #676767;
 	
-}
-input:focus, textarea:focus{
-	border: solid 3px #77bde0;	
 }
 
 textarea{
@@ -234,4 +204,32 @@ label{
 	font-size: 1.5em;
 	margin-top: 20px;
 	padding-left: 20px;
+}
+
+/* JavaScript created section for stars */
+
+section i {
+    position:absolute;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+    0 0 80px #fff;
+    animation: animate linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
 }

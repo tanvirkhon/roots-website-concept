@@ -1,3 +1,4 @@
+// Star Function
 function stars() {
   const count = 200;
   const section = document.querySelector(".parallax");
@@ -23,6 +24,7 @@ function stars() {
 }
 stars();
 
+// Parallax Effect on scroll
 let text = document.getElementById("main-header");
 let leaf = document.getElementById("leaf");
 let moon = document.getElementById("moon");
